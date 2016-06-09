@@ -50,7 +50,10 @@
 {% endif %}
 
     <store>
-        ## Add Configuration for Splunk plugin
+        type splunk_ex
+        host 192.168.0.100
+        port 9997
+        output_format json
     </store>
 
 {% endif %}
