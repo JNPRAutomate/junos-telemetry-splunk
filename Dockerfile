@@ -36,7 +36,9 @@ RUN     gem install --no-ri --no-rdoc \
         gem install --no-ri --no-rdoc \
             protobuf && \
         gem install --no-ri --no-rdoc \
-            fluent-plugin-juniper-telemetry -v ${FLUENTD_JUNIPER_VERSION}
+            fluent-plugin-juniper-telemetry -v ${FLUENTD_JUNIPER_VERSION} \
+        gem install --no-ri --no-rdoc \
+            gem install fluent-plugin-splunk-ex &&
 
 RUN     pip install envtpl
 
